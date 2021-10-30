@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,iBAGI,qBACJ,CAGA,WACI,WAAY,CACZ,YACJ","file":"js.7a2a8940.css","sourceRoot":"../src","sourcesContent":["*,\n*::before,\n*::after {\n    box-sizing: border-box;\n}\n\n\n.input-box {\n    margin: 20px;\n    padding: 20px;\n}"]}
