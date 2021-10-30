@@ -5,19 +5,19 @@ import getRefs from './get-refs';
 
 const refs = getRefs();
 
-refs.searchInput.addEventListener("input", onInputChange);
+refs.searchInput.addEventListener('input', onInputChange);
 
 function onInputChange(evt) {
     evt.preventDefault();
 
 
-const input = evt.currentTarget;
-const searchQuery = input.elements.query.value;
+// const input = evt.currentTarget;
+const searchQuery = evt.target.value;
 
 API.fetchCountries(searchQuery)
     .then(renderCountryCard)
     .catch(onFetchError)
-    .finally(() => input.reset());
+    // .finally(() => input.reset());
 }
 
 function renderCountryCard(country) {
